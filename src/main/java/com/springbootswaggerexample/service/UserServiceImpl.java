@@ -10,11 +10,10 @@ import com.springbootswaggerexample.repository.UserRepository;
 import lombok.NonNull;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-<<<<<<< HEAD
+
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
-=======
->>>>>>> 0a0cfee765bcdbd701e5d4b1228df0d1e0dc4ad5
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -32,12 +31,11 @@ public class UserServiceImpl implements UserService {
     ModelMapper modelMapper;
 
     @Override
-<<<<<<< HEAD
     /*
       public ResponseEntity<List<User>> getAllUsers(String firstName) {
 =======
     public ResponseEntity<List<User>> getAllUsers(String firstName) {
->>>>>>> 0a0cfee765bcdbd701e5d4b1228df0d1e0dc4ad5
+
         try {
             List<User> users = new ArrayList<User>();
 
@@ -47,17 +45,14 @@ public class UserServiceImpl implements UserService {
             if (users.isEmpty()) {
                 return new ResponseEntity<>(HttpStatus.NO_CONTENT);
             }
-<<<<<<< HEAD
             Thread.sleep(5000L);//5 milisanaye bekle
-=======
 
->>>>>>> 0a0cfee765bcdbd701e5d4b1228df0d1e0dc4ad5
             return new ResponseEntity<>(users, HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-<<<<<<< HEAD
+
      */
     public List<User> getUsers() {
         Iterable<User> result = userRepository.findAll();
@@ -65,8 +60,6 @@ public class UserServiceImpl implements UserService {
         result.forEach(employeesList::add);
         return employeesList;
     }
-=======
->>>>>>> 0a0cfee765bcdbd701e5d4b1228df0d1e0dc4ad5
 
     @Override
     public User createUser(UserCreateRequest userCreateRequest) {
@@ -119,11 +112,6 @@ public class UserServiceImpl implements UserService {
 
         return new UserDeleteResponse(id+" User deleted");
     }
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> 0a0cfee765bcdbd701e5d4b1228df0d1e0dc4ad5
 }
 

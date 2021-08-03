@@ -33,12 +33,11 @@ public class UserController {
     @Autowired
     UserService userService;
 
+
     @GetMapping("/getUsers")
-
-    public ResponseEntity<List<User>> getAllUsers(@RequestParam(required = false) String firstName) {
-       return userService.getAllUsers(firstName);
+    public List<User> getUsers() {
+        return userService.getUsers();
     }
-
     @PostMapping(value = "/insert")
     @Operation(summary = "Create New User")
     @ApiResponses(value = {
