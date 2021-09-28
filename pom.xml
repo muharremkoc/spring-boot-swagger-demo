@@ -59,14 +59,11 @@
         </dependency>
 
         <dependency>
-<<<<<<< HEAD
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
         <dependency>
-=======
->>>>>>> 0a0cfee765bcdbd701e5d4b1228df0d1e0dc4ad5
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
@@ -89,7 +86,6 @@
         </dependency>
 
         <dependency>
-<<<<<<< HEAD
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
@@ -98,8 +94,6 @@
 
 
         <dependency>
-=======
->>>>>>> 0a0cfee765bcdbd701e5d4b1228df0d1e0dc4ad5
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-xml</artifactId>
         </dependency>
